@@ -13,12 +13,15 @@ namespace Assign1.Models
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "First Name")]
         public string firstName { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "Last Name")]
         public string lastName { get; set; }
 
+        [Display(Name = "Points Per Game (PPG)")]
         public decimal pointsPerGame { get; set; }
 
         public int teamID { get; set; }
