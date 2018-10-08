@@ -12,6 +12,7 @@ namespace Assign1.Controllers
 {
     public class TeamsController : Controller
     {
+        // automatically connects to the database
         private NbaModel db = new NbaModel();
 
         // GET: Teams
