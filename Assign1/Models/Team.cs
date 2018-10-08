@@ -19,14 +19,17 @@ namespace Assign1.Models
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "City")]
         public string city { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "Team Name")]
         public string teamName { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "Stadium")]
         public string stadium { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
