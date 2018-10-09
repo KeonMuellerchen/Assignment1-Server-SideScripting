@@ -1,5 +1,7 @@
-Server-SideScripting using ASP.NET
+Server-SideScripting-ASP.NET
+
 Assignment 1
+
 Keon Muellerchen
 
 This assignment is a ASP.NET MVC web application and integrates a SQL server database to perfrom CRUD operations. 
