@@ -10,11 +10,13 @@ using Assign1.Models;
 
 namespace Assign1.Controllers
 {
+    [Authorize]
     // automatically connects to the database
     public class PlayersController : Controller
     {
         private NbaModel db = new NbaModel();
 
+        [AllowAnonymous]
         // GET: Players
         public ActionResult Index()
         {
@@ -22,6 +24,7 @@ namespace Assign1.Controllers
             return View(players.ToList());
         }
 
+        [AllowAnonymous]
         // GET: Players/Details/5
         public ActionResult Details(int? id)
         {

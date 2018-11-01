@@ -10,17 +10,20 @@ using Assign1.Models;
 
 namespace Assign1.Controllers
 {
+    [Authorize]
     public class TeamsController : Controller
     {
         // automatically connects to the database
         private NbaModel db = new NbaModel();
 
+        [AllowAnonymous]
         // GET: Teams
         public ActionResult Index()
         {
             return View(db.Teams.ToList());
         }
 
+        [AllowAnonymous]
         // GET: Teams/Details/5
         public ActionResult Details(int? id)
         {
